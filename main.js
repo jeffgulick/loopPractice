@@ -1,9 +1,20 @@
+// let counter = 1;
+// do {
+//   console.log(counter);
+//   counter ++;
+// } while (counter <= 1000);
 
 let persons = [
 {firstName: "Jane", lastName: 'Doe', birthDate: 'Feb 1 1925', gender: 'female'},
-{firstName: "Joe", lastName: 'Doe', birthDate: 'Jan 1 1989', gender: 'male'},
+{firstName: "Joe", lastName: 'Doe', birthDate: 'Jan 1 1998', gender: 'male'},
 {firstName: "Jack", lastName: 'Doe', birthDate: 'March 1 1989', gender: 'female'},
 {firstName: "Dan", lastName: 'Doe', birthDate:  'April 1 1975', gender: 'male'},
+{firstName: "Kevin", lastName: 'Doe', birthDate: 'March 1 1995', gender: 'female'},
+{firstName: "Jasmine", lastName: 'Doe', birthDate: 'March 1 1998', gender: 'female'},
+{firstName: "Erik", lastName: 'Doe', birthDate: 'March 1 1982', gender: 'male'},
+{firstName: "Jon", lastName: 'Doe', birthDate: 'March 1 1922', gender: 'female'},
+{firstName: "Jake", lastName: 'Doe', birthDate: 'March 1 1921', gender: 'male'},
+
 ]
 
 const person = { 
@@ -15,7 +26,6 @@ const person = {
 }
 
 //supposed to print add birth year
-
 for (let x in person) {
     if (x == 'birthDate'){
       let temp = person[x].slice(person[x].length - 4);
@@ -25,8 +35,6 @@ for (let x in person) {
       }
     } 
   }
-
-
 
 let stuff = [
     {name: 'Jeff', age: 39, occupation: 'loser'},
@@ -53,7 +61,8 @@ const convert = (obj) => {
     for (let x of persons) {
         let date = x.birthDate.slice(x.birthDate.length - 4);
         let temp = parseInt(date)
-        x.birthDate = temp;     
+        x.birthDate = temp; 
+    
 }
 }
 //calling function to convert dates to integers
